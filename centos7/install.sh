@@ -11,7 +11,7 @@ fi
 
 # Get the GPG key
 # Note we force the keyserver to use port 80
-gpg --keyserver keys.gnupg.net:80 --recv-key 62B4981F 
+gpg --keyserver hkp://keys.gnupg.net:80 --recv-key 62B4981F 
 gpg --export -a "Fusiondirectory Archive Manager <contact@fusiondirectory.org>" > FD-archive-key
 cp FD-archive-key /etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
 rpm --import  /etc/pki/rpm-gpg/RPM-GPG-KEY-FUSIONDIRECTORY
